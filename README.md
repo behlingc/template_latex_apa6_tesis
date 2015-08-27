@@ -3,6 +3,6 @@ APA6 LaTex tesis template
 
 Asure that apa6 package is installed. On Ubuntu-14.04 this can be done with the command:
 
-# sudo apt-get install texlive-publishers
+ # sudo apt-get install texlive-publishers
 
 

@@ -9,4 +9,13 @@ Because the default language is 'Spanish' you have to install spanish babel pack
 
  # sudo apt-get install texlive-lang-spanish
  
+= Get this template =
+
+ # git clone https://github.com/behlingc/template_latex_apa6_tesis.git
+ 
+= Generate PDF =
+
+ # cd template_latex_apa6_tesis
+ latex tesis
+ dvipdf tesis
 

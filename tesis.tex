@@ -1,0 +1,63 @@
+% Set up you format here
+\documentclass[letterpaper,12pt,doc,natbib]{apa6}
+
+% Setup you language here, we use spanish per default
+\usepackage[spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{gensymb}
+\usepackage{setspace}
+\onehalfspacing
+
+\thispagestyle{empty}
+
+\shorttitle{}
+
+\begin{document}
+
+\input{title}
+
+% From here on pagenumbering is roman
+\pagenumbering{roman}
+
+\section{\uppercase{Tribunal examinador}}
+\input{tribunal_eaxminador}
+
+\section{\uppercase{Dedicatorias}}
+\input{dedicatorias}
+
+\section{\uppercase{Agradecimientos}}
+\input{agradecimientos}
+
+\section{\uppercase{Abreviaturas}}
+\input{abreviaturas}
+
+\section{\uppercase{Resumen}}
+\input{resumen}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% ... and from here on use arabic page numbering
+\pagenumbering{arabic}
+
+\stepcounter{section}
+\section{CAPÍTULO \Roman{section} : Your first section}
+% Chapters are in separate files, 'your_first_section.tex' in this case 
+\input{your_first_section}
+\subsection{Your first subsection}
+\input{your_first_subsection}
+\subsubsection{Your first subsubsection}
+\input{your_first_subsubsection}
+% ... add more chapters here ...
+
+\section*{Glosario}
+\input{glosario}
+
+% Create the bibliografy from the 'tesis.bib' database file, only referenced
+% items will be included
+\bibliography{tesis}
+
+\end{document}
+
+

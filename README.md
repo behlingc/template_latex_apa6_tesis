@@ -16,6 +16,8 @@ Because the default language is 'Spanish' you have to install spanish babel pack
 = Generate PDF =
 
  # cd template_latex_apa6_tesis
- latex tesis
- dvipdf tesis
+ 
+ # latex tesis
+ 
+ # dvipdf tesis
 
